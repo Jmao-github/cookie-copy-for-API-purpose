@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cookie Copy & Fetch</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Cookie Copy & Fetch</h1>
+    </header>
+
+    <main>
+      <section class="cookie-section">
+        <h2>Cookies</h2>
+        <textarea id="cookieTextArea" readonly></textarea>
+        <div class="button-row">
+          <button id="copyButton" class="primary-button">Copy All Cookies</button>
+          <div id="copyStatus" class="status"></div>
+        </div>
+      </section>
+
+      <section class="search-section">
+        <h2>Search & Filter</h2>
+        <div class="search-container">
+          <div class="search-input-row">
+            <input type="text" id="searchInput" placeholder="Search by cookie name...">
+            <button id="searchButton" class="secondary-button">Search</button>
+          </div>
+          
+          <div id="searchResults" class="search-results">
+            <!-- Search results will be populated here -->
+            <div class="no-results">Search for cookie keys to see results</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Personal use only</p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 

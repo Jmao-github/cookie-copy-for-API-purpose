@@ -1,0 +1,47 @@
+{
+  "context_initialization": {
+    "reference_directories": [".notes"],
+    "important_files": [
+      ".notes/project_overview.md",
+      ".notes/task_list.md",
+      ".notes/directory_structure.md",
+      ".notes/meeting_notes.md"
+    ]
+  },
+  "operational_protocol": {
+    "pre_change": [
+      "Read relevant documentation",
+      "Understand existing code structure",
+      "Break down task using MECE principle",
+      "Identify dependencies"
+    ],
+    "post_change": [
+      "Verify functionality",
+      "Document changes",
+      "Update task status"
+    ]
+  },
+  "safety_requirements": {
+    "type_safety": true,
+    "error_handling": true,
+    "documentation": true,
+    "preserve_existing": true
+  },
+  "priorities": {
+    "directory_weights": {
+      ".notes/": 2.0
+    }
+  },
+  "modes": {
+    "base": {
+      "description": "Standard mode for routine tasks and implementations"
+    },
+    "enhanced": {
+      "description": "In-depth mode for complex architectural decisions and refactoring"
+    }
+  },
+  "project_directives": {
+    "name": "cookie-copy",
+    "ai_first": true
+  }
+} 
