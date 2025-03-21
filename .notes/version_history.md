@@ -24,13 +24,13 @@ This document tracks the evolution of the extension through different versions, 
 - Changed host permissions to "<all_urls>" for broader access
 - Simplified UI for a more focused user experience
 
-### v1.2.0 - Search Functionality (2023-03-25)
+### v1.2.0 - Search Functionality (2023-03-21)
 - Added cookie search and filtering capabilities
 - Implemented individual cookie value copying
 - Enhanced UI with search section
 - Maintained original all-cookies copy functionality
 
-### v1.2.1 - Streamlined UI (2023-03-25)
+### v1.2.1 - Streamlined UI (2023-03-21)
 - Removed saved keys functionality for a cleaner interface
 - Increased cookie textarea height for better visibility
 - Simplified the search interface to focus on core functionality

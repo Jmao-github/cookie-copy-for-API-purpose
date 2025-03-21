@@ -1,0 +1,39 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.vs/
+.cursorrules
+
+# Build and packaging artifacts
+dist/
+build/
+*.zip
+*.crx
+*.pem
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories (if you add any in the future)
+node_modules/
+bower_components/
+
+# Optional: Internal documentation (uncomment if you don't want to publish it)
+# .notes/
+
+# Personal files
+knowledge_ref.md 

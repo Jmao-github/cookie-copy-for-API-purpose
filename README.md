@@ -1,38 +1,89 @@
- # Cookie Copy & Fetch
+# Cookie Copy & Fetch
 
-## Overview
-Cookie Copy & Fetch is a Chrome extension designed for personal use that allows users to quickly retrieve and copy cookies from the current site. It also provides a search functionality to filter specific cookie keys and copy their values.
+A Chrome extension for easily retrieving, searching, and copying cookies from websites.
+
+![Cookie Copy & Fetch Screenshot](screenshot.png)
 
 ## Features
-- **Cookie Retrieval**: Access all cookies associated with the active tab's domain and parent domains.
-- **Copy Functionality**: One-click copying of all cookies to the clipboard.
-- **Search & Filter**: Input field for searching cookies by name with real-time filtering of results.
 
-## How to Use
-1. **Install the Extension**:
-   - Download the extension files and load it as an unpacked extension in Chrome via `chrome://extensions/`.
+- **One-Click Cookie Copying**: Automatically retrieves and displays all cookies from the current site for easy copying
+- **Enhanced Cookie Retrieval**: Captures all domain and subdomain cookies, including parent domain cookies
+- **Search Functionality**: Quickly filter cookies by name to find specific values
+- **Individual Value Copying**: Copy specific cookie values with a single click
+- **Clean, Minimal UI**: Focus on the essential functions without clutter
 
-2. **Open the Extension**:
-   - Click on the extension icon in the Chrome toolbar to open the popup.
+## Installation
 
-3. **Retrieve Cookies**:
-   - The extension automatically retrieves all cookies for the current site and displays them in a textarea.
+1. Clone this repository or download the source code:
+   ```
+   git clone https://github.com/yourusername/cookie-copy.git
+   ```
 
-4. **Copy Cookies**:
-   - Click the "Copy All Cookies" button to copy the cookies to your clipboard. A success message will appear confirming the action.
+2. Open Chrome and navigate to `chrome://extensions/`
 
-5. **Search for Cookies**:
-   - Use the search input field to filter cookies by name. The results will update in real-time as you type.
+3. Enable "Developer mode" in the top-right corner
 
-6. **Copy Individual Cookie Values**:
-   - Each matching cookie will have a "Copy" button next to it, allowing you to copy individual cookie values.
+4. Click "Load unpacked" and select the folder containing the extension
 
-## Common Errors and Solutions
-- **Error Retrieving Cookies**: If you encounter an error while retrieving cookies, ensure that the extension has the necessary permissions in the manifest file. The extension requires "cookies" and "activeTab" permissions.
-  
-- **Clipboard Access Issues**: If copying to the clipboard fails, check your browser settings to ensure clipboard access is allowed for extensions. You may also need to grant permissions when prompted.
+5. The extension will appear in your toolbar
 
-- **No Cookies Found**: If the extension displays "No cookies found for this domain," ensure that you are on a site that has cookies set. You may need to log in or refresh the page.
+## Usage
 
-## Conclusion
-This project was developed in just 30 minutes, collaborating with Cursor. Enjoy using the Cookie Copy & Fetch extension for your cookie management needs!
+### Copying All Cookies
+
+1. Navigate to a website that has cookies you want to copy
+2. Click the extension icon in your browser toolbar
+3. The extension will automatically retrieve all cookies associated with the current domain
+4. Click the "Copy All Cookies" button to copy the entire cookie string to your clipboard
+
+### Searching for Specific Cookies
+
+1. Open the extension popup
+2. In the search field, type part of the cookie name you're looking for
+3. The results will filter as you type, showing matching cookies
+4. Click the "Copy" button next to any result to copy just that cookie's value
+
+## Use Cases
+
+- Testing APIs that require cookie-based authentication
+- Debugging authentication issues across different environments
+- Replicating user sessions in tools like Postman or cURL
+- Quickly extracting specific cookie values for development purposes
+
+## Permissions
+
+The extension requires the following permissions:
+- `cookies`: To read cookie data
+- `activeTab`: To get information about the current tab
+- `clipboardWrite`: To copy to the clipboard
+- `<all_urls>`: To access cookies across domains
+
+## Troubleshooting
+
+### No Cookies Displayed
+- Make sure you're on a site that sets cookies
+- You may need to refresh the page or log in to the site
+- Check that the extension has the required permissions
+
+### Copy Function Not Working
+- Ensure you've granted clipboard access permissions to the extension
+- Try refreshing the page and reopening the extension
+
+### Missing Cookies
+- If you expect to see cookies that aren't showing up, it might be because some cookies are restricted with the HttpOnly flag or have specific domain/path restrictions
+
+## Privacy & Security
+
+This extension is for personal development use only. It doesn't send your cookie data anywhere or store it beyond the current session (except in your clipboard when you use the copy function).
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+This project was developed in 30 minutes, collaborating with Cursor, an AI-powered coding environment.
